@@ -13,4 +13,4 @@ export ARCH=mips CROSS_COMPILE=mipsel-linux-gnu-
 
 cd $LINUX
 make ci20_defconfig
-make -j 16
+make -j$(nproc)
