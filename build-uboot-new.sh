@@ -5,5 +5,5 @@ export ARCH=mips CROSS_COMPILE=mipsel-linux-gnu-
 
 cd u-boot
 [ -f .config ] || make ci20_mmc_defconfig
-make -j 16
+make -j$(nproc)
 
